@@ -356,6 +356,7 @@ def handel_logout(request):
 
 ```
 
+
 ## Step 6:
 
 Now integrate some steps in `HTML` to communicate with the server
