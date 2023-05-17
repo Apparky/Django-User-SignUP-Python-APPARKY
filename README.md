@@ -154,7 +154,7 @@ By this your `database` is ready to store all your customers feedback
 
 Previously we are done creating the `server`. Here we will add some `HTML` file with it
 
-You can find it from [Bootstrap](https://getbootstrap.com/)
+Again, You can also find it from [Bootstrap](https://getbootstrap.com/)
 
 > Now create a folder named `static` and `templates`
 > 
@@ -196,9 +196,7 @@ STATICFILES_DIRS = [
 
 In your project Directory, all `html` file will be stored in it, and other `css`, `js` and other fill will be at `static` folder.
 
-You can create or Download it from [Bootstrap](https://getbootstrap.com/) and arrange them accordingly
-
-Here `index.html` is containing the `ContactUs` Form.
+Here `index.html` is containing the `Ecomm` Site.
 
 In the next step we will discuss how to set up all `.css`, `.js` and other file with `.html` file
 
@@ -223,10 +221,10 @@ Before replacing that make sure in the `static` folder you have created the nece
 
 In this case `css` and `js` are the sub folders
 
-Now run the `server` and you'll see a `Contact Us` form will appair at [http://localhost:8000/](http://localhost:8000/), try the system, fill all the options and click `Send Message` 
+Now run the `server` and you'll see the Site will appear at [http://localhost:8000/](http://localhost:8000/), try the system.
 
-Before runing the `server` you need to migrate the project so that the database and of it's cridientials are ready to strore the Feedback info.
-To migrate copy the following command to your `terminal` 
+Before running the `server` you need to migrate the project so that the database and of its credentials are ready to store the Feedback info.
+To migrate copy the following command to your `terminal`.
 ```commndline
 python manage.py makemigrations
 ```
@@ -358,11 +356,34 @@ def handel_logout(request):
 
 ```
 
+## Step 6:
+
+Now integrate some steps in `HTML` to communicate with the server
+
+- Codes for `signup.html`
+```commandline
+        {% for message in messages %}
+        <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+            <strong> {{message}} </strong>
+            <button type="button" class="btn-close" data-bs-dismiss = "alert" aris-label="Close"></button>
+        </div>
+        {% endfor %}
+
+```
+
+Codes for `login.html`
+```commandline
+        {% for message in messages %}
+        <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+            <strong> {{message}} </strong>
+            <button type="button" class="btn-close" data-bs-dismiss = "alert" aris-label="Close"></button>
+        </div>
+        {% endfor %}
+```
+
+You are all set Here Run the server and Check all Functionalities.
 
 
-### Your project is ready... Run the `server` and enjoy 
-
-### Happy learning
 
 ### To know more about [Django](https://www.djangoproject.com/) Click [Here](https://www.djangoproject.com/)
 
