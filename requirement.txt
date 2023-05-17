@@ -1,0 +1,4 @@
+django
+Pillow
+django_six
+six
