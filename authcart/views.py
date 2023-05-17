@@ -81,32 +81,4 @@ def handel_logout(request):
     return redirect('/auth/login')
 
 
-# Create your views here.
-class ActivateAccountView(View):
-    def get(self, request, uidb64, token):
-        try:
-            uid = force_str(urlsafe_base64_decode(uidb64))
-            user = User.objects.get(pk=uid)
-
-        except Exception as identifier:
-            user = None
-
-        if user is not None and generate_token.check_token(user, token):
-            user.is_active = True
-            user.save()
-            messages.info(request, "Account Activated Successfully")
-            return redirect('auth/login')
-
-        return render(request, 'auth/activate_fail.html')
-
-
-
-
-
-
-
-
-
-
-
 
