@@ -389,11 +389,19 @@ You are all set Here Run the server and Check all Functionalities.
 ### To know more about [Django](https://www.djangoproject.com/) Click [Here](https://www.djangoproject.com/)
 
 
+
+
+
+
+
 -------------------
 > 
 > To get more interesting projects follow you GitHub page at [Here](https://github.com/Apparky)
 > 
 > To get more interesting projects follow you Bitbucket page at [Here](https://bitbucket.org/apparky-web/workspace/overview)
 > 
-> To know more about [APPARKY](https://apparky-soumenmtec-gmailcom.vercel.app/) Click [Here](https://apparky-soumenmtec-gmailcom.vercel.app/)
+> To know more about [__APPARKY__](https://apparky.vercel.app/) Click [Here](https://apparky-soumenmtec-gmailcom.vercel.app/)
+
+
+
 
