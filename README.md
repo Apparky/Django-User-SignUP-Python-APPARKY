@@ -396,9 +396,9 @@ You are all set Here Run the server and Check all Functionalities.
 
 -------------------
 > 
-> To get more interesting projects follow you GitHub page at [Here](https://github.com/Apparky)
+> To get more interesting projects follow our GitHub page at [Here](https://github.com/Apparky)
 > 
-> To get more interesting projects follow you Bitbucket page at [Here](https://bitbucket.org/apparky-web/workspace/overview)
+> To get more interesting projects follow our Bitbucket page at [Here](https://bitbucket.org/apparky-web/workspace/overview)
 > 
 > To know more about [__APPARKY__](https://apparky.vercel.app/) Click [Here](https://apparky-soumenmtec-gmailcom.vercel.app/)
 
