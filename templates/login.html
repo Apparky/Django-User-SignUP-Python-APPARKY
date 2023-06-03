@@ -17,9 +17,9 @@
     <form action="/auth/login/" method="post"> {% csrf_token %}
     <br>
 
-    <label for="email">Email</label>
+    <label for="email">Email / Username</label>
     <div class="form-group">
-        <input type="email" class="form-control" id="email" name="email" required>
+        <input type="text" class="form-control" name="email" required>
     </div>
 
     <label for="pass1">PassWord</label>

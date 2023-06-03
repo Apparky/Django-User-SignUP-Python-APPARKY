@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.contrib.auth.models import User
+from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from django.template.loader import render_to_string
 from django.utils.encoding import force_bytes, DjangoUnicodeDecodeError, force_str
@@ -64,11 +65,13 @@ def handel_login(request):
         password = request.POST.get('pass1')
 
         try:
-            if User.objects.get(username=email) is None:
+            user = authenticate(request, username=email, password=password)
+            if user is None:
                 messages.warning(request, "User not Exists")
-                return HttpResponse("USER not Exists")
+#                return HttpResponse("USER not Exists")
 
             else:
+                messages.success(request, 'Loggen in Successfully')
                 return render(request, 'index.html')
 
         except Exception as identification:
